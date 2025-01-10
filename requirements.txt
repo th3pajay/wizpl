@@ -1,9 +1,9 @@
-streamlit
+streamlit~=1.41.1
 torch
-transformers
-requests
-Pillow
-easyocr
-numpy
-pyzbar
-opencv-python-headless
+transformers~=4.48.0
+requests~=2.32.3
+Pillow~=11.1.0
+easyocr~=1.7.2
+numpy~=1.26.4
+opencv-python==4.10.0.84
+pyzbar~=0.1.9
