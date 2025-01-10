@@ -1,9 +1,10 @@
 streamlit
-requests
 torch
 transformers
-easyocr
-pyzbar
+requests
 Pillow
-qwen-vl-utils
+easyocr
 numpy
+opencv-python
+opencv-contrib-python
+pyzbar

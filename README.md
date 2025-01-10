@@ -32,7 +32,7 @@ To run this project, follow these steps:
     streamlit run app.py
 
 ## Demo
-https://wizpl.streamlit.app/
+https://wizpl1.streamlit.app/
 
 ![YTSum GUI Startup](media/wizpl_gui_1.png)
 
