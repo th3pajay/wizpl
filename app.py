@@ -7,6 +7,7 @@ import streamlit as st
 from PIL import Image
 from transformers import ViTImageProcessor, ViTModel
 import easyocr
+from pyzbar.pyzbar import decode
 import numpy as np
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
@@ -51,11 +52,29 @@ def extract_text_from_image(image):
     return text.strip()
 
 
+def extract_barcodes_from_image(image):
+    image_np = np.array(image)  # Convert Pillow image to NumPy array
+    barcodes = decode(image_np)  # Decode barcodes using pyzbar
+    barcode_info = []
+
+    for barcode in barcodes:
+        barcode_type = barcode.type
+        barcode_data = barcode.data.decode("utf-8")
+        barcode_info.append(f"{barcode_type} - {barcode_data}")
+
+    return barcode_info
+
+
 def describe_zpl_label_elements(image):
     description = []
     text = extract_text_from_image(image)
     if text:
         description.append(f"Text detected on the label:\n\n{text}")
+
+    barcodes = extract_barcodes_from_image(image)
+    if barcodes:
+        description.append("\n\nBarcodes detected:\n\n " + ", ".join(barcodes))
+
     return "\n".join(description)
 
 
@@ -182,7 +201,7 @@ def main():
         st.session_state.generated_image = None
         st.session_state.image_generated = False
 
-    if st.button("Generate / Describe Image", key="generate_image_button"):
+    if st.button("Generate / Analyze Image", key="generate_image_button"):
         image = zpl_to_image(zpl_code, dpi, width, height)
         if image:
             rotated_image = rotate_image(image, rotation_angle)
@@ -193,9 +212,9 @@ def main():
             )
 
             if use_vit == "Yes" and model and processor:
-                with st.spinner("Describing the image..."):
+                with st.spinner("Analyzing the image..."):
                     description = describe_image(rotated_image, model, processor)
-                st.subheader("Image Description")
+                st.subheader("Image Details")
                 st.write(description)
         else:
             st.error("Failed to generate the image. Please check your ZPL code.")
