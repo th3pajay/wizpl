@@ -1,0 +1,9 @@
+streamlit
+requests
+torch
+transformers
+easyocr
+pyzbar
+Pillow
+qwen-vl-utils
+numpy
