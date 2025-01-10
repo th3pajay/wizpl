@@ -1,7 +1,6 @@
 import os
 import io
 
-import cv2
 import requests
 import re
 import streamlit as st
@@ -55,22 +54,14 @@ def extract_text_from_image(image):
 
 def extract_barcodes_from_image(image):
     image_np = np.array(image)
-
-    # Ensure the image is in RGB/BGR format
-    if image_np.ndim == 2:  # Grayscale image
-        image_np = cv2.cvtColor(image_np, cv2.COLOR_GRAY2BGR)
-    elif image_np.shape[2] == 4:  # RGBA image, convert to RGB
-        image_np = cv2.cvtColor(image_np, cv2.COLOR_RGBA2RGB)
-
-    gray_image = cv2.cvtColor(image_np, cv2.COLOR_BGR2GRAY)
-    barcodes = decode(gray_image)
+    barcodes = decode(
+        image_np
+    )  # Using pyzbar to decode barcodes directly from the image
     barcode_info = []
-
     for barcode in barcodes:
         barcode_type = barcode.type
         barcode_data = barcode.data.decode("utf-8")
         barcode_info.append(f"{barcode_type} - {barcode_data}")
-
     return barcode_info
 
 
