@@ -5,6 +5,4 @@ requests
 Pillow
 easyocr
 numpy
-opencv-python
-opencv-contrib-python
 pyzbar

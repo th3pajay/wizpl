@@ -6,7 +6,7 @@ Optionally it can also run AI vision model to analyze label elements or to extra
 
 ## Features
 
-- Convert ZPL code to label images
+- Convert ZPL code to label images (uses Labelary API)
 - Rotate label images
 - Extract text and barcodes from images
 - Optimize, lint, and fix ZPL code
