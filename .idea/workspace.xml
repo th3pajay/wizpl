@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f5ca808-0a05-4863-97d2-0596dfe9e39c" name="Changes" comment="Reverting to working version without barcode reading">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;th3pajay&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/th3pajay/wizpl.git&quot;,
+    &quot;accountId&quot;: &quot;31514e35-929c-4f46-86e9-da87a3f3b05b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2rQwxaOslLWQwPHdS7Mcca2l4wI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pajay\PycharmProjects\wizpl\media" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-337b0a7a993a-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.19416.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f5ca808-0a05-4863-97d2-0596dfe9e39c" name="Changes" comment="" />
+      <created>1736504853691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736504853691</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Small textual readme update due to Streamlit naming conventions, and extended pyzbar package onto requirements.txt">
+      <option name="closed" value="true" />
+      <created>1736519261717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736519261717</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Clarification on Labelary dependency, and removing opencv dependency">
+      <option name="closed" value="true" />
+      <created>1736519388517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736519388517</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding back opencv as it is indirectly referred to by pyzbar package">
+      <option name="closed" value="true" />
+      <created>1736519526134</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736519526134</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Aligning imports and code on cv2 and pyzbar">
+      <option name="closed" value="true" />
+      <created>1736520325605</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736520325605</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Aligning imports on cv2 - headless">
+      <option name="closed" value="true" />
+      <created>1736520423398</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736520423398</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Replacing finnicky cv2 with pyzbar">
+      <option name="closed" value="true" />
+      <created>1736520592064</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736520592064</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Removed extract_barcode for the time being">
+      <option name="closed" value="true" />
+      <created>1736520916336</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736520916336</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding back barcode decoding">
+      <option name="closed" value="true" />
+      <created>1736521360933</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736521360933</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Reverting to working version without barcode reading">
+      <option name="closed" value="true" />
+      <created>1736521483778</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736521483778</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Small textual readme update due to Streamlit naming conventions, and extended pyzbar package onto requirements.txt" />
+    <MESSAGE value="Clarification on Labelary dependency, and removing opencv dependency" />
+    <MESSAGE value="Adding back opencv as it is indirectly referred to by pyzbar package" />
+    <MESSAGE value="Aligning imports and code on cv2 and pyzbar" />
+    <MESSAGE value="Aligning imports on cv2 - headless" />
+    <MESSAGE value="Replacing finnicky cv2 with pyzbar" />
+    <MESSAGE value="Removed extract_barcode for the time being" />
+    <MESSAGE value="Adding back barcode decoding" />
+    <MESSAGE value="Reverting to working version without barcode reading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverting to working version without barcode reading" />
+  </component>
+</project>
