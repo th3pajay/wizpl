@@ -1,14 +1,14 @@
 # WizPL
 
-WizPL is a Streamlit app that processes, optimizes, fixes and display ZPL code. 
+WizPL is a Streamlit app that processes, optimizes, fixes and displays ZPL code. 
 
-Optionally it can also run AI vision model to analyze label elements or to extract data with legacy OCR approach into a JSON structure. 
+Optionally it can also run AI vision model to analyze label elements or to extract data with legacy OCR approach into a strucutred JSON payload. 
 
 ## Features
 
 - Convert ZPL code to label images (uses Labelary API)
 - Rotate label images
-- Extract text and barcodes from images
+- Extract text from images
 - Optimize, lint, and fix ZPL code
 - Description of label elements (text and barcodes)
 - AI vision model for image analysis (optional)
